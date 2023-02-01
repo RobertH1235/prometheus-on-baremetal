@@ -7,7 +7,7 @@ cd prometheus-*.*-amd64
 
 sudo cp prometheus /usr/bin
 
-cat > /etc/systemd/system/prometheus.service <<EOF
+cat <<EOF sudo tee -a / /etc/systemd/system/prometheus.service
 [Unit]
 Description=Prometheus
 After=network.target
