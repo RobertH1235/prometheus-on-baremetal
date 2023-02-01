@@ -7,7 +7,7 @@ cd node_exporter-*.*-amd64
 
 sudo cp node_exporter /usr/bin
 
-cat > /etc/systemd/system/node_exporter.service <<EOF
+cat  <<EOF | sudo tee -a /etc/systemd/system/node_exporter.service
 [Unit]
 Description=Node Exporter
 After=network.target
